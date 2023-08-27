@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<h1><center>Students Register</center></h1>
+
+<div class="container">
+    <div class="row">
+        {% for sregister in sregister %}
+        <div class="col-md-3">
+             <div class="card" ">
+                <div class="card-body">
+                    <h3 class="card-title">Name:{{sregister.name}}</h3>
+                    <p class="card-text">Standard:{{sregister.standard}}</p>
+                     <p class="card-text">Phone Number:{{sregister.phone}}</p>
+                    <br>
+                    <hr>
+
+
+                </div>
+             </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+</body>
+</html>

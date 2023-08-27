@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll student</title>
+</head>
+<body>
+<h1><center>Student Enroll</center></h1>
+<form action="" method="POST":>
+    {% csrf_token %}
+   
+    <center>Student Name: <input type="text" name="name"/><br></center>
+    <br>
+    <center>Standard........: <input type="text" name="standard"/><br></center>
+    <br>
+    <center>Phone............       : <input type="number" name="phone"/><br></center>
+    <br>
+    <center><input type="submit" value="Add Student"></center>
+</form>
+</body>
+</html>
